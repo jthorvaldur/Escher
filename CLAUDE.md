@@ -25,6 +25,13 @@ uv run python escher.py --help       # see all options
 ## Origin
 Original author: Balazs Strenner, UW-Madison Mathematics (C++ 2006, Python rewrite 2014). Forked by Joel Thorarinson. GPL licensed.
 
+## Data-First Protocol
+When answering questions about data, facts, documents, conversations, or history:
+1. **Query the vector DB first.** Use `devctl search "query"` or direct Qdrant search before answering from memory or general knowledge. The DB has 2M+ vectors across legal docs, chats, sessions, and facts.
+2. **Cite the source.** Include collection name, confidence level, and date when referencing DB results.
+3. **Distinguish confidence levels.** A bank statement (verified) is not the same as an email claim (asserted). Never present asserted facts as verified.
+4. **Log new facts.** When you discover or confirm a fact during work, log it: `devctl log-fact --fact "..." --source-type X --confidence Y --domain Z`
+
 ## Agent rules
 - This is a fork — preserve attribution and license
 - The math is correct and well-tested — do not simplify hyperbolic geometry computations without verification
