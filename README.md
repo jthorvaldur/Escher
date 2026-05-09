@@ -135,3 +135,7 @@ The module includes doctests:
 ```bash
 python escher.py
 ```
+
+<!-- AUTO:footer -->
+Managed by [policy-orchestrator](https://github.com/jthorvaldur/policy-orchestrator). Category: creative-math. 11 commits, last updated 6 days ago.
+<!-- /AUTO:footer -->
