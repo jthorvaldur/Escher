@@ -1,7 +1,5 @@
 # Escher
 
-> Read `INTENT.md` before acting. It governs all work in this repo.
-
 **Runtime:** Python 3.12+
 **Package manager:** uv
 **Status:** active
